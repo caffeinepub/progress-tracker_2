@@ -1,0 +1,61 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add daily reflection area with custom header text",
+  "requirements": [
+    {
+      "id": "REQ-19",
+      "summary": "Create DailyReflection component with custom Sanskrit header and text area for daily notes",
+      "acceptanceCriteria": [
+        "Component displays header text 'एकत्रा' followed by 'वीर भोग्या वसुंधरा' on the next line",
+        "Text area allows users to write and edit reflection notes",
+        "Component is styled with warm earth tones consistent with existing design",
+        "Component is mobile-responsive with touch-friendly controls (44px minimum)",
+        "Component integrates with the selected date from Calendar component"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/DailyReflection.tsx",
+          "operation": "create",
+          "description": "Create a new DailyReflection component that displays a two-line header ('एकत्रा' and 'वीर भोग्या वसुंधरा') and a text area for reflection notes. Accept selectedDate as a prop and use the useReflection and useSaveReflection hooks to fetch and save reflection data. Apply warm earth-tone styling using Tailwind classes consistent with other components (e.g., border-primary, bg-card). Ensure the text area has a minimum touch target of 44px height for mobile usability. Include auto-save or explicit save functionality when the user modifies the text."
+        }
+      ]
+    },
+    {
+      "id": "REQ-21",
+      "summary": "Add React Query hooks for daily reflection operations with optimistic updates and notifications",
+      "acceptanceCriteria": [
+        "Hook to save/update reflection for a date with optimistic updates",
+        "Hook to fetch reflection by date",
+        "Toast notifications on successful save",
+        "Toast notifications on error",
+        "Proper cache invalidation after mutations"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/hooks/useQueries.ts",
+          "operation": "modify",
+          "description": "Add useReflection hook that calls actor.getReflection(date) to fetch a reflection by date string. Add useSaveReflection mutation hook that calls actor.saveReflection(date, content), implements optimistic updates by setting cache data before mutation completes, invalidates the reflection query on success, and displays toast notifications for success ('Reflection saved') and error states. Follow existing patterns in the file for query keys, error handling, and toast usage."
+        }
+      ]
+    },
+    {
+      "id": "REQ-22",
+      "summary": "Integrate DailyReflection component into DateDetailsPanel for selected date reflection editing",
+      "acceptanceCriteria": [
+        "DailyReflection component appears in DateDetailsPanel",
+        "Reflection loads automatically when a date is selected",
+        "Reflection saves properly when text area is modified",
+        "Component layout remains mobile-responsive",
+        "Component follows existing DateDetailsPanel styling patterns"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/DateDetailsPanel.tsx",
+          "operation": "modify",
+          "description": "Import and render the DailyReflection component within the DateDetailsPanel, passing the selectedDate prop to it. Position the component logically within the panel layout (e.g., after the task list and before or after the PerformanceRating component). Ensure the component integrates seamlessly with the existing responsive grid layout and maintains consistent spacing and styling with other panel sections."
+        }
+      ]
+    }
+  ]
+}

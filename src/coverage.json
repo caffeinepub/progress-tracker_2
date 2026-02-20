@@ -1,0 +1,74 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-20T20:20:34.701Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 4,
+    "implemented": 3,
+    "items": [
+      {
+        "id": "REQ-19",
+        "summary": "Create a DailyReflection component that displays a text area for writing notes for the currently selected date from the Calendar component, with a header showing 'एकत्रा' on the first line and 'वीर भोग्या वसुंधरा' on the second line, using the same warm earth-tone styling and mobile-responsive layout patterns as other components",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/DailyReflection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/DailyReflection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-20",
+        "summary": "Add backend data model and storage for daily reflections that associates a date with reflection text content, and implement public functions to save and retrieve reflection notes by date",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-21",
+        "summary": "Create React Query hooks in useQueries.ts for daily reflection operations (save reflection, get reflection by date) with proper optimistic updates, cache invalidation, and toast notifications for success/error states",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/hooks/useQueries.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/hooks/useQueries.ts"
+        ]
+      },
+      {
+        "id": "REQ-22",
+        "summary": "Integrate the DailyReflection component into the DateDetailsPanel component so that when a date is selected in the Calendar, users can view and edit the reflection for that specific date alongside tasks and performance rating",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/DateDetailsPanel.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/DateDetailsPanel.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "backend/migration.mo",
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/DailyReflection.tsx",
+    "frontend/src/components/DateDetailsPanel.tsx",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useQueries.ts",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

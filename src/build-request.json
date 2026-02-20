@@ -1,0 +1,98 @@
+{
+  "kind": "build_request",
+  "title": "Add daily reflection area with custom header text",
+  "projectName": "Progress Tracker",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-19",
+      "text": "Create a DailyReflection component that displays a text area for writing notes for the currently selected date from the Calendar component, with a header showing 'एकत्रा' on the first line and 'वीर भोग्या वसुंधरा' on the second line, using the same warm earth-tone styling and mobile-responsive layout patterns as other components",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-5"
+        ],
+        "quotes": [
+          "add one Daily reflection area in which i could write a note for each day and one and also write a note at the top \"एकत्रा\" and then in next line \"वीर भोग्या वसुंधरा\""
+        ]
+      },
+      "acceptanceCriteria": [
+        "Component displays header text 'एकत्रा' followed by 'वीर भोग्या वसुंधरा' on the next line",
+        "Text area allows users to write and edit reflection notes",
+        "Component is styled with warm earth tones consistent with existing design",
+        "Component is mobile-responsive with touch-friendly controls (44px minimum)",
+        "Component integrates with the selected date from Calendar component"
+      ]
+    },
+    {
+      "id": "REQ-20",
+      "text": "Add backend data model and storage for daily reflections that associates a date with reflection text content, and implement public functions to save and retrieve reflection notes by date",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-5"
+        ],
+        "quotes": [
+          "add one Daily reflection area in which i could write a note for each day"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend stores reflection text for each date",
+        "Public function to set/update reflection for a specific date",
+        "Public function to retrieve reflection by date",
+        "Reflection data persists across application restarts",
+        "Migration support if needed for existing actor state"
+      ]
+    },
+    {
+      "id": "REQ-21",
+      "text": "Create React Query hooks in useQueries.ts for daily reflection operations (save reflection, get reflection by date) with proper optimistic updates, cache invalidation, and toast notifications for success/error states",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-5"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hook to save/update reflection for a date with optimistic updates",
+        "Hook to fetch reflection by date",
+        "Toast notifications on successful save",
+        "Toast notifications on error",
+        "Proper cache invalidation after mutations"
+      ]
+    },
+    {
+      "id": "REQ-22",
+      "text": "Integrate the DailyReflection component into the DateDetailsPanel component so that when a date is selected in the Calendar, users can view and edit the reflection for that specific date alongside tasks and performance rating",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-5"
+        ]
+      },
+      "acceptanceCriteria": [
+        "DailyReflection component appears in DateDetailsPanel",
+        "Reflection loads automatically when a date is selected",
+        "Reflection saves properly when text area is modified",
+        "Component layout remains mobile-responsive",
+        "Component follows existing DateDetailsPanel styling patterns"
+      ]
+    }
+  ],
+  "constraints": [
+    "Maintain single-actor architecture in backend/main.mo",
+    "Do not modify immutable paths: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui",
+    "Use existing warm earth-tone color palette and styling patterns",
+    "Ensure touch-friendly controls with 44px minimum height for mobile"
+  ],
+  "nonGoals": [
+    "Rich text editing or formatting in reflection text area",
+    "Sharing or exporting reflections",
+    "Reflection templates or prompts",
+    "Multiple reflections per day"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "Progress tracking desktop application with calendar, task assignment, and daily checklist features",
+  "architectural_notes": [
+    "Desktop application (PC)",
+    "Progress tracking focused application",
+    "Multi-device access with authentication",
+    "Responsive design for mobile and tablet"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-calendar-view-component-that-displays-the-current-month-with-navigation-to-previous-and-next-months-allowing-users-to-see-their-progress-over-time",
+      "title": "Create a calendar view component that displays the current month with navigation to previous and next months, allowing users to see their progress over time",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-task-assignment-interface-that-allows-users-to-create-new-tasks-set-due-dates-and-view-all-assigned-tasks-in-a-list-or-grid-view",
+      "title": "Create a task assignment interface that allows users to create new tasks, set due dates, and view all assigned tasks in a list or grid view",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-daily-checklist-component-that-displays-today-s-checklist-items-with-checkboxes-allows-users-to-mark-items-as-complete-and-shows-completion-progress",
+      "title": "Create a daily checklist component that displays today's checklist items with checkboxes, allows users to mark items as complete, and shows completion progress",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-integrate-calendar-view-with-task-data-to-display-visual-indicators-on-dates-that-have-tasks-or-high-completion-rates-allowing-users-to-see-their-progress-patterns-over-time",
+      "title": "Integrate calendar view with task data to display visual indicators on dates that have tasks or high completion rates, allowing users to see their progress patterns over time",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-a-cohesive-desktop-optimized-interface-with-a-modern-productivity-aesthetic-using-warm-earth-tones-terracotta-sage-green-cream-with-clean-typography-and-spacious-layouts-that-convey-focus-and-organization",
+      "title": "Design a cohesive desktop-optimized interface with a modern productivity aesthetic using warm earth tones (terracotta, sage green, cream) with clean typography and spacious layouts that convey focus and organization",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-integrate-internet-identity-authentication-into-the-application-by-adding-login-logout-ui-controls-in-the-header-component-that-use-the-existing-useinternetidentity-hook-displaying-the-user-s-authentication-state-and-providing-clear-call-to-action-buttons-for-unauthenticated-users",
+      "title": "Integrate Internet Identity authentication into the application by adding login/logout UI controls in the Header component that use the existing useInternetIdentity hook, displaying the user's authentication state and providing clear call-to-action buttons for unauthenticated users",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-make-the-application-layout-responsive-for-mobile-devices-by-implementing-mobile-first-breakpoints-using-tailwind-css-adapting-the-three-column-grid-layout-calendar-dailychecklist-tasklist-to-stack-vertically-on-smaller-screens-and-ensuring-all-interactive-elements-have-appropriate-touch-targets",
+      "title": "Make the application layout responsive for mobile devices by implementing mobile-first breakpoints using Tailwind CSS, adapting the three-column grid layout (Calendar, DailyChecklist, TaskList) to stack vertically on smaller screens, and ensuring all interactive elements have appropriate touch targets",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-header-component-to-be-mobile-responsive-with-appropriate-spacing-and-font-sizing-that-adapts-to-smaller-screens-while-maintaining-the-warm-earth-tone-design-aesthetic",
+      "title": "Update the Header component to be mobile-responsive with appropriate spacing and font sizing that adapts to smaller screens while maintaining the warm earth-tone design aesthetic",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-datedetailspanel-component-is-mobile-friendly-with-proper-width-constraints-touch-friendly-close-button-and-scrollable-content-area-for-devices-with-limited-vertical-space",
+      "title": "Ensure the DateDetailsPanel component is mobile-friendly with proper width constraints, touch-friendly close button, and scrollable content area for devices with limited vertical space",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-futuregoals-component-that-displays-a-list-of-future-goals-with-their-target-dates-and-completion-status-includes-a-form-to-add-new-goals-with-text-input-and-date-picker-allows-users-to-mark-goals-as-complete-and-uses-touch-friendly-controls-44px-minimum-with-mobile-responsive-layout",
+      "title": "Create a FutureGoals component that displays a list of future goals with their target dates and completion status, includes a form to add new goals with text input and date picker, allows users to mark goals as complete, and uses touch-friendly controls (44px minimum) with mobile-responsive layout",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-performancerating-component-that-displays-a-1-10-rating-scale-for-the-currently-selected-date-from-calendar-component-allows-users-to-click-or-tap-a-number-to-set-the-performance-rating-for-that-date-visually-highlights-the-current-rating-and-integrates-with-the-existing-datedetailspanel-to-show-the-performance-rating-alongside-tasks",
+      "title": "Create a PerformanceRating component that displays a 1-10 rating scale for the currently selected date (from Calendar component), allows users to click or tap a number to set the performance rating for that date, visually highlights the current rating, and integrates with the existing DateDetailsPanel to show the performance rating alongside tasks",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-calendar-component-to-display-visual-indicators-for-dates-that-have-performance-ratings-set-using-a-subtle-badge-or-color-accent-that-distinguishes-rated-dates-from-task-indicators",
+      "title": "Update the Calendar component to display visual indicators for dates that have performance ratings set, using a subtle badge or color accent that distinguishes rated dates from task indicators",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-app-tsx-layout-to-include-the-new-futuregoals-and-performancerating-components-positioning-futuregoals-as-a-new-section-in-the-grid-layout-that-is-responsive-and-stacks-vertically-on-mobile-while-performancerating-integrates-into-the-datedetailspanel-workflow",
+      "title": "Update the App.tsx layout to include the new FutureGoals and PerformanceRating components, positioning FutureGoals as a new section in the grid layout that is responsive and stacks vertically on mobile, while PerformanceRating integrates into the DateDetailsPanel workflow",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-react-query-hooks-in-usequeries-ts-for-all-future-goals-operations-add-get-toggle-complete-delete-and-performance-rating-operations-set-rating-get-rating-by-date-get-all-ratings-with-proper-optimistic-updates-cache-invalidation-and-toast-notifications-for-success-error-states",
+      "title": "Create React Query hooks in useQueries.ts for all future goals operations (add, get, toggle complete, delete) and performance rating operations (set rating, get rating by date, get all ratings) with proper optimistic updates, cache invalidation, and toast notifications for success/error states",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-dailyreflection-component-that-displays-a-text-area-for-writing-notes-for-the-currently-selected-date-from-the-calendar-component-with-a-header-showing-on-the-first-line-and-on-the-second-line-using-the-same-warm-earth-tone-styling-and-mobile-responsive-layout-patterns-as-other-components",
+      "title": "Create a DailyReflection component that displays a text area for writing notes for the currently selected date from the Calendar component, with a header showing 'एकत्रा' on the first line and 'वीर भोग्या वसुंधरा' on the second line, using the same warm earth-tone styling and mobile-responsive layout patterns as other components",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-react-query-hooks-in-usequeries-ts-for-daily-reflection-operations-save-reflection-get-reflection-by-date-with-proper-optimistic-updates-cache-invalidation-and-toast-notifications-for-success-error-states",
+      "title": "Create React Query hooks in useQueries.ts for daily reflection operations (save reflection, get reflection by date) with proper optimistic updates, cache invalidation, and toast notifications for success/error states",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-integrate-the-dailyreflection-component-into-the-datedetailspanel-component-so-that-when-a-date-is-selected-in-the-calendar-users-can-view-and-edit-the-reflection-for-that-specific-date-alongside-tasks-and-performance-rating",
+      "title": "Integrate the DailyReflection component into the DateDetailsPanel component so that when a date is selected in the Calendar, users can view and edit the reflection for that specific date alongside tasks and performance rating",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Calendar view for tracking progress",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Task assignment system",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Daily checklist functionality",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Implement backend data model and methods to store and retrieve tasks with properties including title, description, due date, status, and assignment information",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Implement backend data model and methods for daily checklist items that can be marked as complete or incomplete, with the ability to reset daily",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Add login/authentication system for multi-device access",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Make interface responsive for mobile devices",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Add future goals section to track long-term objectives",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Add daily performance rating system (1-10 scale) for each date",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Create a backend data model and storage for future goals with properties including goal text, target date, and completion status, and implement public functions to add, update, retrieve, and delete goals",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Create a backend data model and storage for daily performance ratings that associates a date with a performance score (1-10 integer scale), and implement public functions to set and retrieve performance ratings by date",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Add daily reflection area with text input for writing notes for each day, with header text 'एकत्रा' and subtext 'वीर भोग्या वसुंधरा'",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-16",
+      "summary": "Add backend data model and storage for daily reflections that associates a date with reflection text content, and implement public functions to save and retrieve reflection notes by date",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Progress Tracker",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

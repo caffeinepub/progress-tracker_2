@@ -1,0 +1,59 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-dailyreflection-component-that-displays-a-text-area-for-writing-notes-for-the-currently-selected-date-from-the-calendar-component-with-a-header-showing-on-the-first-line-and-on-the-second-line-using-the-same-warm-earth-tone-styling-and-mobile-responsive-layout-patterns-as-other-components",
+      "featureTitle": "Create a DailyReflection component that displays a text area for writing notes for the currently selected date from the Calendar component, with a header showing 'एकत्रा' on the first line and 'वीर भोग्या वसुंधरा' on the second line, using the same warm earth-tone styling and mobile-responsive layout patterns as other components",
+      "files": [
+        "frontend/src/components/DailyReflection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-19"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-react-query-hooks-in-usequeries-ts-for-daily-reflection-operations-save-reflection-get-reflection-by-date-with-proper-optimistic-updates-cache-invalidation-and-toast-notifications-for-success-error-states",
+      "featureTitle": "Create React Query hooks in useQueries.ts for daily reflection operations (save reflection, get reflection by date) with proper optimistic updates, cache invalidation, and toast notifications for success/error states",
+      "files": [
+        "frontend/src/hooks/useQueries.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-21"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-integrate-the-dailyreflection-component-into-the-datedetailspanel-component-so-that-when-a-date-is-selected-in-the-calendar-users-can-view-and-edit-the-reflection-for-that-specific-date-alongside-tasks-and-performance-rating",
+      "featureTitle": "Integrate the DailyReflection component into the DateDetailsPanel component so that when a date is selected in the Calendar, users can view and edit the reflection for that specific date alongside tasks and performance rating",
+      "files": [
+        "frontend/src/components/DateDetailsPanel.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-22"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

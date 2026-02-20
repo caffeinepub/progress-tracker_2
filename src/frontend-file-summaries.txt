@@ -1,0 +1,19 @@
+{
+  "frontend/src/App.tsx": "Main application component with ThemeProvider and responsive grid layout that includes Calendar, DailyChecklist, FutureGoals, and TaskList components, stacking vertically on mobile and arranging in columns on larger screens.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for all backend operations including tasks, daily checklist items, goals, performance ratings, and reflections with optimistic updates and toast notifications.",
+  "frontend/src/components/Header.tsx": "Application header with Internet Identity authentication controls (login/logout buttons), user principal display, and responsive branding that adapts from mobile to desktop layouts.",
+  "frontend/src/components/Footer.tsx": "Footer component with attribution link to caffeine.ai including proper UTM tracking parameters and current year.",
+  "frontend/src/components/Calendar.tsx": "Interactive calendar with task indicators and performance rating indicators (distinct visual markers), touch-friendly date selection with 44px minimum touch targets, and mobile-responsive design.",
+  "frontend/src/components/DateDetailsPanel.tsx": "Date details panel displaying performance rating, daily reflection section with Sanskrit header, and tasks list in a scrollable area with mobile-responsive layout and touch-friendly controls.",
+  "frontend/src/components/TaskList.tsx": "Task management component with mobile-responsive layout, full-width Add Task button on mobile, and adaptive spacing for different screen sizes.",
+  "frontend/src/components/TaskItem.tsx": "Individual task display component with mobile-responsive text sizing, touch-friendly checkbox (44px minimum), and proper text wrapping for long content.",
+  "frontend/src/components/TaskForm.tsx": "Task creation form with mobile-responsive layout, touch-optimized input fields (44px height), stacked buttons on mobile, and proper text sizing.",
+  "frontend/src/components/DailyChecklist.tsx": "Daily checklist component with mobile-responsive layout, touch-optimized input fields and buttons (44px minimum), and sticky positioning on desktop.",
+  "frontend/src/components/ChecklistItem.tsx": "Checklist item component with mobile-responsive design, touch-friendly checkbox (44px minimum touch target), and proper text wrapping.",
+  "frontend/src/index.css": "Global styles with warm earth tone OKLCH color system (terracotta, sage green, cream) for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom Inter font family, extended spacing, shadows, and warm earth tone color tokens.",
+  "frontend/src/components/FutureGoals.tsx": "Future goals component with form to add goals with target dates, displays sorted goal list with completion status, uses warm earth-tone design and mobile-responsive layout with 44px touch targets.",
+  "frontend/src/components/GoalItem.tsx": "Individual goal item component with checkbox for completion status, displays goal text and formatted target date with overdue indicator, uses optimistic updates and warm earth-tone styling.",
+  "frontend/src/components/PerformanceRating.tsx": "Performance rating component displaying 1-10 rating buttons for a selected date, highlights current rating with primary color, uses 44px touch targets and responsive grid layout.",
+  "frontend/src/components/DailyReflection.tsx": "Daily reflection component with Sanskrit header text ('एकत्रा' and 'वीर भोग्या वसुंधरा'), auto-saving textarea for daily notes with 1-second debounce, and loading indicator during save operations."
+}
